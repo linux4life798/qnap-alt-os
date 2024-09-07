@@ -13,7 +13,10 @@ There seems to be an inssue on testing.
 ## TPM2 PCR Info
 
 This helps with planning for which PCRs can be used for automatic LUKS disk encryption unlocking on boot.
-See https://uapi-group.org/specifications/specs/linux_tpm_pcr_registry/ for PCR assignments.
+
+See the following for typical PCR usages/assignments:
+* https://uapi-group.org/specifications/specs/linux_tpm_pcr_registry/
+* https://man.archlinux.org/man/systemd-cryptenroll.1#TPM2_PCRs_and_policies
 
 Experiments using the firmwares included in **QuTS hero h5.2.0.2782 build 20240601 Release Candidate (2024-06-03)**:
 

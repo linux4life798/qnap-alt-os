@@ -24,4 +24,5 @@ Experiments using the firmwares included in **QuTS hero h5.2.0.2782 build 202406
 * Entering BIOS and discarding setting did NOT change any PCRs.
 * Entering BIOS, making no changes, but saving changes anyways did NOT change and PCRs.
 * Entering BIOS, changing startup beep setting, and saving changes did NOT PCRs.
-* PCRs 1 and 10 changed by simply connecting a USB flash drive during normal boot. I have seen that PCR 1 and 10 can return back to the original values, once the USB mass storage device is disconnect, even if you had booted from the USB device once. I was testing with the PiKVM virtual USB flash drive. 
+* PCRs 1 and 10 changed by simply connecting a USB flash drive during normal boot. I have seen that PCR 1 and 10 can return back to the original values, once the USB mass storage device is disconnect, even if you had booted from the USB device once. I was testing with the PiKVM virtual USB flash drive.
+* PCR 14 seems to stay the same between Debian testing live boot and Debian stable (bookworm) normal boot.

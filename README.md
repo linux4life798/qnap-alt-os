@@ -29,7 +29,7 @@ Boot alternative OSes on the QNAP TS-473A.
   - I do not expect to save personal data on these drives.
 * [Pinecil V2 Solder Iron](https://www.pine64.org/pinecil/)
 * [Solder](https://a.co/d/aOSKhpQ)
-* Drill bits up to 1/2" -- Incrementally enlarge the hole from 1/8" to 1/2", to avoid issues with not having a strudy drilling platform.
+* Drill bits up to 1/2" -- Incrementally enlarge the hole from 1/8" to 1/2", to avoid issues with not having a sturdy drilling platform.
 
 **References:**
 
@@ -43,7 +43,7 @@ Boot alternative OSes on the QNAP TS-473A.
 ### OS Selection
 
 If you want to use the TPM2 to unlock LUKS volumes with dracut, you need to use the stable (bookworm) release of Debian (Aug 1, 2024).
-There seems to be an inssue on testing.
+There seems to be an issue on testing.
 
 ### Install from Serial Console
 
@@ -53,7 +53,7 @@ I have since moved on from TrueNAS to bare Debian. Here are some notes about run
    * Just press Del on boot to open the BIOS/FW settings.
    * Navigate right using the arrow keys (in screen) to the `Save & Exit` tab of the settings menu.
    * At the bottom of the page is `Boot Override`, which allows you to select a boot device/mode to temporarily boot from.
-* **Debian Live** \- When booting Debian Live, the grub bootloader will present on the serial console at 115200 baud, but you need to modify the grub linux boot command line to force linux to use the serila console, too.
+* **Debian Live** \- When booting Debian Live, the grub bootloader will present on the serial console at 115200 baud, but you need to modify the grub linux boot command line to force linux to use the serial console, too.
    * At the grub menu, press `e` on the keyboard to modify the first grub live boot option.
    * Add `console=ttyS0,115200n8` to the linux command line and press `Ctrl-X` to boot.
    * If you have enough RAM, you might want to add `toram`, also, which will copy and run the rootfs from RAM.
@@ -63,9 +63,9 @@ I have since moved on from TrueNAS to bare Debian. Here are some notes about run
    * At the grub menu, highlight the desired installer mode/entry.
    * Press `e` to edit the entry and add `console=ttyS0,115200n8` to the linux command line.
    * When navigating the installer, you can do `Ctrl-A`, `A`, and then `2` to switch to the shell tab, when using screen. See [https://unix.stackexchange.com/a/533545/162557](https://unix.stackexchange.com/a/533545/162557) for clarification.
-   * Be sure to manually ammend the `/etc/default/grub` file to include `GRUB_CMDLINE_LINUX="console=ttyS0,115200n8"`. Then, run `update-grub`. You may see that GRUB itself was configured to use serial, but the linux kernel itself might not be configured.
+   * Be sure to manually amend the `/etc/default/grub` file to include `GRUB_CMDLINE_LINUX="console=ttyS0,115200n8"`. Then, run `update-grub`. You may see that GRUB itself was configured to use serial, but the linux kernel itself might not be configured.
    * If you need to pre-configure the LUKS volume, before debian install, checkout https://www.blakecarpenter.dev/installing-debian-on-existing-encrypted-lvm/. Note that you will need to manually setup the crypttab, after install.
-      * Make sure to select dm-crypt, parted, fdisk, and other neccesary extra tools during the Debian installer, if you intend to manually partiiton and setup LUKS in the installer shell.
+      * Make sure to select dm-crypt, parted, fdisk, and other necessary extra tools during the Debian installer, if you intend to manually partition and setup LUKS in the installer shell.
    * Tested on Debian bookworm.
 * **TrueNAS Scale** \- It has a dedicated console install mode grub item name `Start TrueNAS SCALE Installation (115200 baud)`.
 
@@ -82,6 +82,6 @@ Experiments using the firmwares included in **QuTS hero h5.2.0.2782 build 202406
 * PCR 9 and 10 changed after a `sudo dracut --regenerate-all -f`.
 * Entering BIOS and discarding setting did NOT change any PCRs.
 * Entering BIOS, making no changes, but saving changes anyways did NOT change and PCRs.
-* Entering BIOS, changing startup beep setting, and saving changes did NOT PCRs.
-* PCRs 1 and 10 changed by simply connecting a USB flash drive during normal boot. I have seen that PCR 1 and 10 can return back to the original values, once the USB mass storage device is disconnect, even if you had booted from the USB device once. I was testing with the PiKVM virtual USB flash drive.
+* Entering BIOS, changing startup beep setting, and saving changes did NOT change PCRs.
+* PCRs 1 and 10 changed by simply connecting a USB flash drive during normal boot. I have seen that PCR 1 and 10 can return back to the original values, once the USB mass storage device is disconnected, even if you had booted from the USB device once. I was testing with the PiKVM virtual USB flash drive.
 * PCR 14 seems to stay the same between Debian testing live boot and Debian stable (bookworm) normal boot.

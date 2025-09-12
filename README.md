@@ -7,7 +7,24 @@ Boot alternative OSes on the QNAP TS-473A.
 
 ### Serial Console Setup
 
-See my [Serial console and TrueNAS on QNAP TS-473A Reddit post](https://www.reddit.com/r/qnap/comments/11lfqgn/serial_console_and_truenas_on_qnap_ts473a/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button).
+<img width="709" height="349" alt="image" src="https://github.com/user-attachments/assets/4ccd775a-9d9c-474e-ad36-1c5d390e2ed2" />
+
+Serial Console Connector Pinout:
+
+| 1    | 2     | 3        | 4    | 5     |
+| ---- | ----- | -------- | ---- | ----- |
+| `TX` | `VCC` | `(3.3V)` | `RX` | `GND` |
+
+*All IO is 3.3V reference.*
+*Make sure you connect motherboard TX to the RX on the USB serial adapter and motherboard RX to the TX on the USB serial adapter.*
+
+References:
+
+* See my full post about this [Serial console and TrueNAS on QNAP TS-473A Reddit post](https://www.reddit.com/r/qnap/comments/11lfqgn/serial_console_and_truenas_on_qnap_ts473a/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button).
+* https://www.cyrius.com/debian/kirkwood/qnap/ts-219/serial/
+* [https://www.desgehtfei.net/en/qnap-serial-console-setup-with-arduino/](https://web.archive.org/web/20241114040425/https://www.desgehtfei.net/en/qnap-serial-console-setup-with-arduino/)
+* https://www.rigacci.org/wiki/doku.php/doc/appunti/hardware/qnap_ts-120
+* https://www.reddit.com/r/qnap/comments/ttm5db/gaining_access_to_the_ts451deu/)
 
 ### OS Selection
 

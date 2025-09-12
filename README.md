@@ -63,8 +63,9 @@ I have since moved on from TrueNAS to bare Debian. Here are some notes about run
    * At the grub menu, highlight the desired installer mode/entry.
    * Press `e` to edit the entry and add `console=ttyS0,115200n8` to the linux command line.
    * When navigating the installer, you can do `Ctrl-A`, `A`, and then `2` to switch to the shell tab, when using screen. See [https://unix.stackexchange.com/a/533545/162557](https://unix.stackexchange.com/a/533545/162557) for clarification.
-   * Be sure to manually amend the `/etc/default/grub` file to include `GRUB_CMDLINE_LINUX="console=ttyS0,115200n8"`. Then, run `update-grub`. You may see that GRUB itself was configured to use serial, but the linux kernel itself might not be configured.
-   * If you need to pre-configure the LUKS volume, before debian install, checkout https://www.blakecarpenter.dev/installing-debian-on-existing-encrypted-lvm/. Note that you will need to manually setup the crypttab, after install.
+   * After you finish the install and reboot, you may need to temporarily edit the grub boot entry and add `console=ttyS0,115200n8`, again. I don't believe the Debian installer configures the grub kernel command line by default.
+   * Once you have booted into the fresh Debian install, be sure to manually amend the `/etc/default/grub` file to include `GRUB_CMDLINE_LINUX="console=ttyS0,115200n8"`. Then, run `update-grub`. You may see that GRUB itself was configured to use serial, but the linux kernel itself might not be configured.
+   * If you need to pre-configure the LUKS volume, before debian install, check out https://www.blakecarpenter.dev/installing-debian-on-existing-encrypted-lvm/. Note that you will need to manually setup the crypttab, after install.
       * Make sure to select dm-crypt, parted, fdisk, and other necessary extra tools during the Debian installer, if you intend to manually partition and setup LUKS in the installer shell.
    * Tested on Debian bookworm.
 * **TrueNAS Scale** \- It has a dedicated console install mode grub item name `Start TrueNAS SCALE Installation (115200 baud)`.

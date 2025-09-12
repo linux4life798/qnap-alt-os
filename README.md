@@ -20,7 +20,7 @@ Boot alternative OSes on the QNAP TS-473A.
 
 **Parts:**
 
-* [Motherboard Connector](https://a.co/d/exj0P0y) \- You can rearrange the colored wires to make more sense
+* [Motherboard Connector - JPH-2.0-4P-F-M-2-20pc](https://a.co/d/exj0P0y) - [Wayback Machine Link](https://web.archive.org/web/20220325051225/https://www.amazon.com/dp/B08RHGT3W3)
 * [USB Type-C Serial Board](https://a.co/d/2YyofCJ)
 * [5 Minute Epoxy](https://a.co/d/5qFtlhH)
 * [2x Kingston 500GB Boot SSDs](https://a.co/d/1E6CDp7) \- Going for cheap with high-er write endurance. We will never even come close to the max transfer speed, since these are going into PCIe Gen3 x1 slots.

@@ -31,3 +31,8 @@ The cool thing is that you can actually just temporarily boot from the PMAP USB 
    * Bottom Advertised Version: 2.20.1274
 
 [https://www.qnap.com/en/download?model=ts-473a&category=firmware](https://www.qnap.com/en/download?model=ts-473a&category=firmware)
+
+
+*References and Tools:*
+* https://github.com/max-boehm/qnap-utils
+* https://www.securefirmware.de/posts/qnap_decryptor/

@@ -28,7 +28,7 @@ I have since moved on from TrueNAS to bare Debian. Here are some notes about run
    * If you have enough RAM, you might want to add `toram`, also, which will copy and run the rootfs from RAM.
    * Login as `user` and password `live`.
    * Tested on Debian bookworm.
-* **Debian Net Installer** \- Like Debian live, add you need to modify the linux command line.
+* **Debian Net Installer** \- Like Debian live, you need to modify the linux command line.
    * At the grub menu, highlight the desired installer mode/entry.
    * Press `e` to edit the entry and add `console=ttyS0,115200n8` to the linux command line.
    * When navigating the installer, you can do `Ctrl-A`, `A`, and then `2` to switch to the shell tab, when using screen. See [https://unix.stackexchange.com/a/533545/162557](https://unix.stackexchange.com/a/533545/162557) for clarification.

@@ -20,10 +20,13 @@ Boot alternative OSes on the QNAP TS-473A.
 
 **Parts:**
 
-* [Motherboard Connector - JPH-2.0-4P-F-M-2-20pc](https://a.co/d/exj0P0y) - [Wayback Machine Link](https://web.archive.org/web/20220325051225/https://www.amazon.com/dp/B08RHGT3W3)
-* [USB Type-C Serial Board](https://a.co/d/2YyofCJ)
+* [Motherboard Connector - JPH-2.0-4P-F-M-2-20pc](https://a.co/d/exj0P0y) - [Wayback Machine Archive](https://web.archive.org/web/20220325051225/https://www.amazon.com/dp/B08RHGT3W3)
+* [USB Type-C Serial Board](https://a.co/d/2YyofCJ) - [Wayback Machine Archive](https://web.archive.org/web/20250912225229/https://www.amazon.com/dp/B07MLXS877)
 * [5 Minute Epoxy](https://a.co/d/5qFtlhH)
-* [2x Kingston 500GB Boot SSDs](https://a.co/d/1E6CDp7) \- Going for cheap with high-er write endurance. We will never even come close to the max transfer speed, since these are going into PCIe Gen3 x1 slots.
+* [2x Kingston 500GB Boot SSDs](https://a.co/d/1E6CDp7) - [Wayback Machine Archive](https://web.archive.org/web/20240426041709/https://www.amazon.com/dp/B0BBWJH1P8)
+  - These are cheap SSds with high-er write endurance.
+  - We will never even come close to the maxing out the transfer speed of this SSD, since QNAP TS-473A's two onboard PCIe slots only support Gen3 x1.
+  - I do not expect to save personal data on these drives.
 * [Pinecil V2 Solder Iron](https://www.pine64.org/pinecil/)
 * [Solder](https://a.co/d/aOSKhpQ)
 * Drill bits up to 1/2" -- We need to incrementally enlarge the hole from 1/8" to 1/2", since we have a pretty bad drilling setup

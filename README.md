@@ -70,6 +70,8 @@ I have since moved on from TrueNAS to bare Debian. Here are some notes about run
    * Tested on Debian bookworm.
 * **TrueNAS Scale** \- It has a dedicated console install mode grub item name `Start TrueNAS SCALE Installation (115200 baud)`.
 
+See [TS-473A-Firmware.md](TS-473A-Firmware.md) for info about firmware updates.
+
 ### TPM2 PCR Info
 
 This helps with planning for which PCRs can be used for automatic LUKS disk encryption unlocking on boot.

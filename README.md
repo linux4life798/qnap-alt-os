@@ -29,7 +29,7 @@ Boot alternative OSes on the QNAP TS-473A.
   - I do not expect to save personal data on these drives.
 * [Pinecil V2 Solder Iron](https://www.pine64.org/pinecil/)
 * [Solder](https://a.co/d/aOSKhpQ)
-* Drill bits up to 1/2" -- We need to incrementally enlarge the hole from 1/8" to 1/2", since we have a pretty bad drilling setup
+* Drill bits up to 1/2" -- Incrementally enlarge the hole from 1/8" to 1/2", to avoid issues with not having a strudy drilling platform.
 
 **References:**
 

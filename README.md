@@ -40,11 +40,6 @@ Boot alternative OSes on the QNAP TS-473A.
 * https://www.rigacci.org/wiki/doku.php/doc/appunti/hardware/qnap_ts-120
 * https://www.reddit.com/r/qnap/comments/ttm5db/gaining_access_to_the_ts451deu/)
 
-### OS Selection
-
-If you want to use the TPM2 to unlock LUKS volumes with dracut, you need to use the stable (bookworm) release of Debian (Aug 1, 2024).
-There seems to be an issue on testing.
-
 ### Install from Serial Console
 
 I have since moved on from TrueNAS to bare Debian. Here are some notes about running other distros and how to force them to use the serial console.
@@ -53,6 +48,7 @@ I have since moved on from TrueNAS to bare Debian. Here are some notes about run
    * Just press Del on boot to open the BIOS/FW settings.
    * Navigate right using the arrow keys (in screen) to the `Save & Exit` tab of the settings menu.
    * At the bottom of the page is `Boot Override`, which allows you to select a boot device/mode to temporarily boot from.
+* **Boot Media** - I installed the alternative OS on additional SSDs, so that I could continue to install QNAP software (with bundled firmware) updates using the builtin USB PMAP 5G drive.
 * **Debian Live** \- When booting Debian Live, the grub bootloader will present on the serial console at 115200 baud, but you need to modify the grub linux boot command line to force linux to use the serial console, too.
    * At the grub menu, press `e` on the keyboard to modify the first grub live boot option.
    * Add `console=ttyS0,115200n8` to the linux command line and press `Ctrl-X` to boot.
@@ -73,6 +69,9 @@ I have since moved on from TrueNAS to bare Debian. Here are some notes about run
 See [TS-473A-Firmware.md](TS-473A-Firmware.md) for info about firmware updates.
 
 ### TPM2 PCR Info
+
+If you want to use the TPM2 to unlock LUKS volumes with dracut, you need to use the stable (bookworm) release of Debian (Aug 1, 2024), as opposed to the the testing (trixie) release.
+There seems to be an issue with dracut on testing.
 
 This helps with planning for which PCRs can be used for automatic LUKS disk encryption unlocking on boot.
 

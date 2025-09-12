@@ -18,6 +18,22 @@ Boot alternative OSes on the QNAP TS-473A.
 *All IO is 3.3V reference.*
 *Make sure you connect motherboard TX to the RX on the USB serial adapter and motherboard RX to the TX on the USB serial adapter.*
 
+**Parts:**
+
+* [Motherboard Connector](https://a.co/d/exj0P0y) \- You can rearrange the colored wires to make more sense
+* [USB Type-C Serial Board](https://a.co/d/2YyofCJ)
+* [5 Minute Epoxy](https://a.co/d/5qFtlhH)
+* [2x Kingston 500GB Boot SSDs](https://a.co/d/1E6CDp7) \- Going for cheap with high-er write endurance. We will never even come close to the max transfer speed, since these are going into PCIe Gen3 x1 slots.
+* [Pinecil V2 Solder Iron](https://www.pine64.org/pinecil/)
+* [Solder](https://a.co/d/aOSKhpQ)
+* Drill bits up to 1/2" -- We need to incrementally enlarge the hole from 1/8" to 1/2", since we have a pretty bad drilling setup
+
+# Protection
+
+* [3M Respirator with Basic Cartridge](https://www.homedepot.com/p/3M-Professional-Paint-Spray-Respirator-Medium-7512PA1-A-PS/202077812?cm_mmc=ecc-_-STH_OUT_FOR_DELIVERY-_-V1_M1_CA-_-Product_URL&ecc_ord=WB38460137&em_id=cf4ef26cb55a2b15ec3ac10d525697636be73633aec5147e0befdc7773c491ae)
+* [Extra Cartridge](https://a.co/d/b3c4zeL)
+* Maybe safety glasses, gloves, and a fan?
+
 **References:**
 
 * [Build a permanent usb-to-serial interface](https://www.youtube.com/shorts/-r4dkya10EQ)

@@ -31,12 +31,6 @@ Boot alternative OSes on the QNAP TS-473A.
 * [Solder](https://a.co/d/aOSKhpQ)
 * Drill bits up to 1/2" -- We need to incrementally enlarge the hole from 1/8" to 1/2", since we have a pretty bad drilling setup
 
-# Protection
-
-* [3M Respirator with Basic Cartridge](https://www.homedepot.com/p/3M-Professional-Paint-Spray-Respirator-Medium-7512PA1-A-PS/202077812?cm_mmc=ecc-_-STH_OUT_FOR_DELIVERY-_-V1_M1_CA-_-Product_URL&ecc_ord=WB38460137&em_id=cf4ef26cb55a2b15ec3ac10d525697636be73633aec5147e0befdc7773c491ae)
-* [Extra Cartridge](https://a.co/d/b3c4zeL)
-* Maybe safety glasses, gloves, and a fan?
-
 **References:**
 
 * [Build a permanent usb-to-serial interface](https://www.youtube.com/shorts/-r4dkya10EQ)

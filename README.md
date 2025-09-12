@@ -24,7 +24,7 @@ Boot alternative OSes on the QNAP TS-473A.
 * [USB Type-C Serial Board](https://a.co/d/2YyofCJ) - [Wayback Machine Archive](https://web.archive.org/web/20250912225229/https://www.amazon.com/dp/B07MLXS877)
 * [5 Minute Epoxy](https://a.co/d/5qFtlhH)
 * [2x Kingston 500GB Boot SSDs](https://a.co/d/1E6CDp7) - [Wayback Machine Archive](https://web.archive.org/web/20240426041709/https://www.amazon.com/dp/B0BBWJH1P8)
-  - These are cheap SSds with high-er write endurance.
+  - These are cheap SSDs with high-er write endurance.
   - We will never even come close to the maxing out the transfer speed of this SSD, since QNAP TS-473A's two onboard PCIe slots only support Gen3 x1.
   - I do not expect to save personal data on these drives.
 * [Pinecil V2 Solder Iron](https://www.pine64.org/pinecil/)

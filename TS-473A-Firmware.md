@@ -30,9 +30,14 @@ The cool thing is that you can actually just temporarily boot from the PMAP USB 
    * **EC Version - Q07DE014**
    * Bottom Advertised Version: 2.20.1274
 
-[https://www.qnap.com/en/download?model=ts-473a&category=firmware](https://www.qnap.com/en/download?model=ts-473a&category=firmware)
+[QNAP Firmware Download for the TS-473A](https://www.qnap.com/en/download?model=ts-473a&category=firmware)
 
 
 *References and Tools:*
 * https://github.com/max-boehm/qnap-utils
+  - https://github.com/max-boehm/qnap-utils/issues/1
+  - https://gist.github.com/galaxy4public/0420c7c9a8e3ff860c8d5dce430b2669
+  - Thanks Paul Rascagneres <rootbsd@r00ted.com>
 * https://www.securefirmware.de/posts/qnap_decryptor/
+* https://reverseengineering.stackexchange.com/questions/2704/firmware-analysis-and-file-system-extraction
+* https://blog.pcfe.net/hugo/posts/2023-03-12-qnap-ts-473a-firmware-updates/

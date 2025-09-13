@@ -29,6 +29,10 @@ The cool thing is that you can actually just temporarily boot from the PMAP USB 
    * Build Date and Time - 12/20/2021 11:58:14
    * **EC Version - Q07DE014**
    * Bottom Advertised Version: 2.20.1274
+* **QuTS hero h5.2.6.3195 build 20250715** (2025-07-30)
+   * A simple unarchiving of the update shows the following versions.
+   * EC Version **Q07DE014** for my `Q07D` EC variant.
+   * It also contains a Q07DE014 for a `Q07D` EC variant.
 
 [QNAP Firmware Download for the TS-473A](https://www.qnap.com/en/download?model=ts-473a&category=firmware)
 
